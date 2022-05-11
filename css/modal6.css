@@ -1,0 +1,42 @@
+#show-modal6:hover{
+    background: #d9d9d9;
+    border-radius: 25px;
+    cursor: pointer;
+ }
+
+ .modal6{
+    z-index: 100000 !important;
+     background-color: rgba(0,0,0,0.8);
+     position: fixed;
+     top: 0;
+     left: 0;
+     overflow: auto;
+     display:flex;
+     height: 100%;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+    
+ }
+
+
+.modal_contents6{
+    background-color: #fff;
+    padding: 7rem 5rem;
+    border-radius: 25px;
+}
+
+
+
+.modal_close_bar6{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -2rem;
+    margin-top: -1rem;
+    cursor: pointer;
+
+}
+
+.modal--hidden6{
+    display: none;
+}

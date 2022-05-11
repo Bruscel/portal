@@ -1,0 +1,78 @@
+#show-modal:hover{
+    background: #d9d9d9;
+    border-radius: 25px;
+    cursor: pointer;
+ }
+
+ .modal{
+     background-color: rgba(0,0,0,0.8);
+     position: fixed;
+     top: 0;
+     left: 0;
+     overflow: auto;
+     display:flex;
+     height: 100%;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+    
+ }
+
+
+.modal_contents{
+    background-color: #fff;
+    padding: 7rem 5rem;
+    border-radius: 25px;
+}
+
+
+
+.modal_close_bar{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -2rem;
+    margin-top: -1rem;
+    cursor: pointer;
+
+}
+
+.modal--hidden{
+    display: none;
+}
+
+#modalbtn{
+    margin-top: 1rem;
+}
+
+#github{
+
+    position: relative;
+    right: 100%;
+    top: 63%;
+    height: 10%;
+    width: 12%;
+    cursor: pointer;
+
+}
+
+#link{
+    
+    position: relative;
+    right: 90%;
+    top: 65%;
+ 
+}
+
+#name:hover{
+    color: #195190FF;
+}
+
+#Bottongithub{
+    position: relative;
+    left: 40%;
+    bottom: 50%;
+    height: 5%;
+    width: 5%;
+    cursor: pointer;
+
+}
