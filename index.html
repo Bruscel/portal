@@ -81,17 +81,11 @@
   <section class="portfolio" id="portfolio">
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0" style="margin: 0px">Portfolio</h2>
-      
-      <div class="row" style="margin: 50px">
+      <div class="row justify-content-md-center" style="margin: 50px">
           <!--ASP.NET-->
-        <div class="col-md-6 col-lg-4" id="show-modal2">          
-            <img class="img-fluid" src="img/portfolio/C++.png" alt="">
+        <div class="col-md-auto" id="show-modal">          
+            <img class="img-fluid" src="img/portfolio/csharp.jpg" alt="">
         </div>
-          <!--Baby Names-->
-        <div class="col-md-6 col-lg-4" id="show-modal6">   
-            <img class="img-fluid" src="img/portfolio/bbnames.png " alt="">
-        </div>
-
       </div>
     </div>
   </section>
@@ -100,7 +94,7 @@
   <!-- Contact Section -->
   <section id="contact">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+      <h2 class="text-center text-uppercase mb-0" style="color:white" >Contact Me</h2>
       
       <div class="row" style="margin: 50px">
         <div class="col-lg-8 mx-auto">
@@ -188,7 +182,7 @@
 
   <div class="copyright py-4 text-center text-white">
     <div class="container">
-      <small>&copy; 2020 Myron Zambrano. All rights reserved</small>
+      <small>&copy; 2022 Myron Zambrano. All rights reserved</small>
     </div>
   </div>
 
@@ -215,46 +209,30 @@
 -->
 
 
+
 <!-- Modal 1 -->
 <div class="modal modal--hidden" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal_contents">
-      <div  class="modal-header">
-        <h1 class="modal-title display-3" id="exampleModalLabel">Resume</h1>
-      </div>
-      <div class="modal-body">
-        The following project consist of a Wordpress theme that was used to develop a web resume as foundation.
-      </div>
-      <div class="modal-footer">
-        <a href="https://github.com/Myron1128/resume">
-          <img id="github" src="img/portfolio/github.jpg" >
-        </a>
-        <a id="link" href="http://lamp.cse.fau.edu/~mzambrano2016/p1/index.html">
-          <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
-            <path d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z"/>
-            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
-            <path d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z"/>
-          </svg>
-        </a>
-        <button id="modalbtn" type="button" class="modal_close_bar btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-</div>
-
-<!-- Modal 2 -->
-<div class="modal2 modal--hidden2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal_contents2">
+  <div class="modal_contents">
     <div  class="modal-header">
-      <h1 class="modal-title display-3" id="exampleModalLabel">C++</h1>
+      <h1 class="modal-title display-3" id="exampleModalLabel">C#</h1>
     </div>
-    <div class="modal-body">
-      The following C++ solution allows user's to run a time complexity calculations on 3 algorithms with results. 
+    <div class="modal-body text-center">
+    The following solution displays homes that are below the average home price within a neighborhood.<br> 
+    A web application developed with ASP.NET allows for a front-end view of homes that have been computed to be below a neighborhood's average home price.<br> 
+    The algorithm that makes the calculations was developed using node.js.<br>
+    The data is extracted from redfin.com every 5 minutes using a cron job and stored in an Azure Database.<br> 
+    The node.js app is deployed to a raspberry pi that sits on an Nginx web server.
     </div>
     <div class="modal-footer">
-      <a  href="http://lamp.cse.fau.edu/~mzambrano2016/p1/index.html">
-        <img id="github" src="img/portfolio/github.jpg" >
+      <a id="github" href="https://github.com/Bruscel/RaspiWebApplication2">
+        <svg width="2.5em" height="2.5em" viewBox="0 0 24 24"  class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <g>
+              <path fill="none" d="M0 0h24v24H0z"/>
+              <path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z"/>
+          </g>
+      </svg>
       </a>
-      <a id="link" href="http://lamp.cse.fau.edu/~mzambrano2016/p1/index.html">
+      <a id="link" href="https://redfindataextractapp.azurewebsites.net">
         <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
           <path d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z"/>
@@ -262,111 +240,7 @@
           <path d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z"/>
         </svg>
       </a>
-      <button id="modalbtn" type="button" class="modal_close_bar2 btn btn-secondary" data-dismiss="modal">Close</button>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 3 -->
-<div class="modal3 modal--hidden3" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal_contents3">
-    <div  class="modal-header">
-      <h1 class="modal-title display-3" id="exampleModalLabel">Salary Converter</h1>
-    </div>
-    <div class="modal-body">
-      The following project converts salaries from year to hour, month to year, weeks to year, and days to years.
-    </div>
-    <div class="modal-footer">
-      <a  href="http://lamp.cse.fau.edu/~mzambrano2016/p3/index.html">
-        <img id="github" src="img/portfolio/github.jpg" >
-      </a>
-      <a id="link" href="http://lamp.cse.fau.edu/~mzambrano2016/p3/index.html">
-        <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
-          <path d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z"/>
-          <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
-          <path d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z"/>
-        </svg>
-      </a>
-      <button id="modalbtn" type="button" class="modal_close_bar3 btn btn-secondary" data-dismiss="modal">Close</button>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 4 -->
-<div class="modal4 modal--hidden4" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal_contents4">
-    <div  class="modal-header">
-      <h1 class="modal-title display-3" id="exampleModalLabel">Checklist</h1>
-    </div>
-    <div class="modal-body">
-      The following project lets user's create a checklist for the porpuse of completing tasks untilizing JavaScript. 
-    </div>
-    <div class="modal-footer">
-      <a  href="http://lamp.cse.fau.edu/~mzambrano2016/p4/index.html">
-        <img id="github" src="img/portfolio/github.jpg" >
-      </a>
-      <a id="link" href="http://lamp.cse.fau.edu/~mzambrano2016/p4/index.html">
-        <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
-          <path d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z"/>
-          <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
-          <path d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z"/>
-        </svg>
-      </a>
-      <button id="modalbtn" type="button" class="modal_close_bar4 btn btn-secondary" data-dismiss="modal">Close</button>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 5 -->
-<div class="modal5 modal--hidden5" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal_contents5">
-    <div  class="modal-header">
-      <h1 class="modal-title display-3" id="exampleModalLabel">Money Exchange</h1>
-    </div>
-    <div class="modal-body">
-      The following project utilizes a currency exchange API, the exchange is sent through JSON and displayed.
-    </div>
-    <div class="modal-footer">
-      <a  href="http://lamp.cse.fau.edu/~mzambrano2016/p5/index.php">
-        <img id="github5" src="img/portfolio/github.jpg" >
-      </a>
-      <a id="link5" href="http://lamp.cse.fau.edu/~mzambrano2016/p5/index.php">
-        <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
-          <path d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z"/>
-          <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
-          <path d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z"/>
-        </svg>
-      </a>
-      <button id="modalbtn" type="button" class="modal_close_bar5 btn btn-secondary" data-dismiss="modal">Close</button>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 6 -->
-<div class="modal6 modal--hidden6" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal_contents6">
-    <div  class="modal-header">
-      <h1 class="modal-title display-3" id="exampleModalLabel">Baby Names</h1>
-    </div>
-    <div class="modal-body">
-      The following project eanables user's to insert their favorite baby names with the UI displaying the inputs. 
-    </div>
-    <div class="modal-footer">
-      <a  href="http://lamp.cse.fau.edu/~mzambrano2016/p6/index.php">
-        <img id="github" src="img/portfolio/github.jpg" >
-      </a>
-      <a id="link" href="http://lamp.cse.fau.edu/~mzambrano2016/p6/index.php">
-        <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
-          <path d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z"/>
-          <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
-          <path d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z"/>
-        </svg>
-      </a>
-      <button id="modalbtn" type="button" class="modal_close_bar6 btn btn-secondary" data-dismiss="modal">Close</button>
+      <button id="modalbtn" type="button" class="modal_close_bar btn btn-secondary" data-dismiss="modal">Close</button>
     </div>
   </div>
 </div>
